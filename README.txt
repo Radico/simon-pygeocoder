@@ -1,5 +1,5 @@
 ==================
-pygeocoder 1.2.5
+pygeocoder 1.3.0
 ==================
 Xiao Yu
 
@@ -49,6 +49,11 @@ For comments, issues, requests, please contact via BitBucket at the above websit
 
 Changelog
 ---------
+Version 1.3.0
+Bug fixes to support Python 3.10:
+* Fix ImportError for collections.abc.Iterator
+* Remove unresolved unicode reference in GeocoderError.__unicode__ attribute
+
 Version 1.2.5
 More business key fix
 

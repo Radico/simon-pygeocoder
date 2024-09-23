@@ -1,8 +1,8 @@
 import sys
-import collections
+from collections.abc import Iterator
 
 
-class GeocoderResult(collections.Iterator):
+class GeocoderResult(Iterator):
     """
     A geocoder resultset to iterate through address results.
     Exemple:
@@ -179,4 +179,4 @@ class GeocoderError(Exception):
 
     def __unicode__(self):
         """Return a unicode representation of this :exc:`GeocoderError`."""
-        return unicode(self.__str__())
+        return self.__str__()
